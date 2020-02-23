@@ -9,7 +9,12 @@ module.exports = {
     }
   },
     // necessary when using sqlite3
-    useNullAsDefault: true
+    useNullAsDefault: true,
+
+     // generates migration files in a data/migrations/ folder
+     migrations: {
+      directory: './database/migrations'
+    }
 
   
 };
